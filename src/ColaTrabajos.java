@@ -10,7 +10,6 @@ public class ColaTrabajos {
         Deque<String> trabajos = new LinkedList<>();
 
         do {
-
             System.out.println("1. Agregar trabajo normal.");
             System.out.println("2. Agregar trabajo urgente.");
             System.out.println("3. Procesar siguiente trabajo.");
