@@ -1,13 +1,13 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class ColaTrabajos {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int opcion = 0;
-        List<String> trabajos = new ArrayList<>();
-
+        
+        Deque<String> trabajos = new LinkedList<>();
 
         do {
 
@@ -24,21 +24,30 @@ public class ColaTrabajos {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("1\n");
+                    trabajos.addLast("Tarea.");
                     break;
             
                 case 2:
+                    trabajos.addFirst("Proyecto.");
                     break;
 
                 case 3:
+                    String procesar = trabajos.pollFirst();
+                    System.out.println(procesar);
+                    break;
 
                 case 4:
+                    String siguiente = trabajos.peekFirst();
+                    System.out.println(siguiente);
+                    break;
 
                 case 5:
+                    System.out.println("Trabajos pendientes: " + trabajos);
+                    break;
 
                 case 6:
-
-
+                    System.out.println("Numero de trabajos: " + trabajos.size());
+                    break;
             }
         } while(opcion != 7);
 
