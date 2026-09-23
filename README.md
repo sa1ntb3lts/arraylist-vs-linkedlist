@@ -289,7 +289,7 @@ while (!lista.isEmpty()) {
 ```
 
 Analice por qué `ArrayList` debe desplazar elementos y `LinkedList`
-puede modificar los enlaces del primer nodo.
+puede modificar los enlaces del primer nodo. Por lo que se menciono antes, al ser doblemente enlazada puede modificar el previo y el siguiente nodo.
 
 ## 12. LinkedList como Deque
 
