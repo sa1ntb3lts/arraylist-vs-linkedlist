@@ -12,8 +12,8 @@ public class BenchmarkListas {
         llenar(arrayList);
         llenar(linkedList);
 
-        medirAcceso("ArrayList", arrayList);
-        medirAcceso("LinkedList", linkedList);
+        medirInsercionFinal("ArrayList", new ArrayList<>());
+        medirInsercionFinal("LinkedList", new LinkedList<>());
     }
 
     private static void llenar(List<Integer> lista) {
@@ -22,18 +22,16 @@ public class BenchmarkListas {
         }
     }
 
-    private static void medirAcceso(String nombre, List<Integer> lista) {
-        long inicio = System.nanoTime();
-        long suma = 0;
+    private static void medirInsercionFinal(String nombre, List<Integer> lista) {
 
-        for (Integer valor : lista) {
-            suma += valor;
+        long inicio = System.nanoTime();
+
+        for (int i = 0; i < 100_000; i++) {
+            lista.add(i);
         }
 
         long fin = System.nanoTime();
 
-        System.out.printf("%s: %.3f ms%n",
-                nombre, (fin - inicio) / 1_000_000.0);
-        System.out.println("Suma: " + suma);
+        System.out.printf("%s: %.3f ms%n", nombre, (fin - inicio) / 1_000_000.0);
     }
 }
