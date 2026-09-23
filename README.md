@@ -203,10 +203,10 @@ Ejecute al menos tres veces y registre:
 
   |Ejecución |    ArrayList |  LinkedList|
   |-----------| -----------| ------------|
-  |1   |        |       |     
-  |2   |        |       |                      
- | 3   |        |       |                     
- | Promedio|        |       |              
+  |1   |   6.063     |   3246.316    |     
+  |2   |   6.219     |    3248.149   |                      
+ | 3   |    6.094    |    3254.713   |                     
+ | Promedio|   6 ms     |   3240 ~ 3250 ms   |              
 
 Después sustituya el recorrido mediante `get(i)` por:
 
@@ -219,10 +219,10 @@ for (Integer valor : lista) {
 Compare nuevamente y registre resultados
 |Ejecución |    ArrayList |  LinkedList|
   |-----------| -----------| ------------|
-  |1   |        |       |     
-  |2   |        |       |                      
- | 3   |        |       |                     
- | Promedio|        |       |              
+  |1   |    6.074    |    1.817   |     
+  |2   |    6.046    |    2.192   |                      
+ | 3   |     6.022   |    1.971    |                     
+ | Promedio|    6 ms    |   2 ms    |              
 
 ## 9. Inserciones al inicio
 
