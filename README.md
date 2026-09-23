@@ -417,29 +417,29 @@ las operaciones requeridas.
 
 ## 16. Preguntas de análisis
 
-1.  ¿Qué interfaz implementan tanto `ArrayList` como `LinkedList`? R.
-2.  ¿Cuál es la principal diferencia en su estructura interna? R.
-3.  ¿Por qué `ArrayList.get(i)` tiene complejidad O(1)? R.
-4.  ¿Por qué `LinkedList.get(i)` tiene complejidad O(n)?R. 
+1.  ¿Qué interfaz implementan tanto `ArrayList` como `LinkedList`? Una lista
+2.  ¿Cuál es la principal diferencia en su estructura interna? Que una arraylist usa un arreglo dinamico, linked usa una lista enlazada doble.
+3.  ¿Por qué `ArrayList.get(i)` tiene complejidad O(1)? Porque es mas directo acceder a una posicion.
+4.  ¿Por qué `LinkedList.get(i)` tiene complejidad O(n)? Porque necesita ubicar el nodo.
 5.  ¿Qué ocurre internamente cuando se ejecuta
-    `ArrayList.add(0, elemento)`? R.
+    `ArrayList.add(0, elemento)`? Se agrega un elemento en el indice 0. En caso de que hubiera un valor en esa misma posicion, ese valor se desplaza a la siguiente posicion.
 6.  ¿Por qué `LinkedList.add(0, elemento)` no necesita desplazar los
-    demás elementos?R.
+    demás elementos? Porque usa nodos, puede meter valors entre ellos sin problema.
 7.  ¿Por qué afirmar que "`LinkedList` es mejor para inserciones" puede
-    ser incorrecto? R.
+    ser incorrecto? Porque primero necesita recorrer la lista.
 8.  ¿Qué diferencia observó entre recorrer `LinkedList` mediante
-    `get(i)` y mediante `for-each`?R.
-9.  ¿Qué resultados obtuvo para inserciones al inicio?R.
-10. ¿Qué resultados obtuvo para inserciones al final?R.
+    `get(i)` y mediante `for-each`? Que con el for fue demasiado rapido, con el get tardo mas porque necesita buscar cada posicion por iteracion.
+9.  ¿Qué resultados obtuvo para inserciones al inicio? Array fueron como 100 ms y en el linked 3 ms.
+10. ¿Qué resultados obtuvo para inserciones al final? Array fue exactamente 5 ms y en linked 2 ms.
 11. ¿Los tiempos medidos coinciden exactamente con lo esperado a partir
-    de Big-O? Explique.R.
+    de Big-O? Explique. Si, O(1) significa que es tiempo constante, O(n) puede ser mas creciente que eso. En los resultados se puede observar esa diferencia.
 12. ¿Qué costo de memoria adicional tiene conceptualmente una lista
-    enlazada?R.
-13. ¿Qué ventajas proporciona programar contra `List`?R.
+    enlazada? Que puede necesitar mas tiempo de ejecucion en algunas tareas.
+13. ¿Qué ventajas proporciona programar contra `List`? Permite implementar tanto un arraylist como una linkedlist.
 14. ¿Por qué `Deque` representa mejor el problema de la cola de
-    trabajos?R.
-15. ¿En qué escenario seleccionaría `ArrayList`?R.
-16. ¿En qué escenario tendría sentido utilizar `LinkedList`?R.
+    trabajos? Porque es mas facil quitar elementos de los extremos.
+15. ¿En qué escenario seleccionaría `ArrayList`? Cuando necesito solamente insertar elementos o buscarlos por posicion.
+16. ¿En qué escenario tendría sentido utilizar `LinkedList`? Cuendo necesite insertar o eliminar varios elementos que esten en medio de otros elementos.
 
 ## 17. Entregables
 
