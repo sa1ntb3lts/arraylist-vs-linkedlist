@@ -275,8 +275,8 @@ Registre los resultados:
 
  | Operación   |           ArrayList |  LinkedList|
  | ------------|-------------------| ------------|
- | Insertar al inicio |            |          |
- | Insertar al final |            |   |
+ | Insertar al inicio |     100.695       |    3.268      |
+ | Insertar al final |      5.000      |  2.587  |
 
 ## 11. Eliminaciones
 
