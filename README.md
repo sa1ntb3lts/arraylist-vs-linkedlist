@@ -250,7 +250,7 @@ medirInsercionInicio("ArrayList", new ArrayList<>());
 medirInsercionInicio("LinkedList", new LinkedList<>());
 ```
 
-Formule una hipótesis antes de ejecutar y compare con los resultados.
+Formule una hipótesis antes de ejecutar y compare con los resultados. Creo que ambos tiempos van a ser muy parecidos en la insercion al final, en la de inicio el Arraylist va a tomar mas tiempo.
 
 ## 10. Inserciones al final
 
