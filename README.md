@@ -74,8 +74,8 @@ ArrayList │   A   │   B   │   C   │   D   │   E   │
           └───────┴───────┴───────┴───────┴───────┘
 ```
 
-**Pregunta:** ¿Qué ocurre internamente al insertar en la posición 0?
-¿Por qué el acceso por índice puede realizarse eficientemente? R.
+**Pregunta:** ¿Qué ocurre internamente al insertar en la posición 0? Se recorre el String que estaba antes en esa posicion.
+¿Por qué el acceso por índice puede realizarse eficientemente? Porque es un arreglo dinamico, no es estatico.
 
 ## 5. Experimento con LinkedList
 
